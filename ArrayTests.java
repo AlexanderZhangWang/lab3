@@ -31,4 +31,10 @@ public class ArrayTests {
     int[] arr = { 9, 8, 7, 6, 5, 3 };
     assertArrayEquals(arr, ArrayExamples.reversed(input1));
   }
+
+  @Test
+  public void testAverageWithoutLowestWithMultipleLowestNums(){
+    double[] arr = {2, 1, 1, 2, 3, 3};
+    assertEquals(2.2, ArrayExamples.averageWithoutLowest(arr), 0);
+  }
 }
